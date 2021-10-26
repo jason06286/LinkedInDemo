@@ -127,7 +127,8 @@ export default {
         </svg>
         CLOSE
       </button>
-      <div class="relative flex items-center justify-between border-b">
+      <div class=" overflow-y-scroll h-full">
+ <div class="relative flex items-center justify-between border-b ">
         <h3 class="px-3 font-bold">More from LinkedIn</h3>
         <button
           type="button"
@@ -238,6 +239,8 @@ export default {
           >
         </button>
       </div>
+      </div>
+     
     </div>
   </div>
 </template>
