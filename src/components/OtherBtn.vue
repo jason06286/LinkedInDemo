@@ -127,116 +127,118 @@ export default {
         </svg>
         CLOSE
       </button>
-      <div class="relative flex items-center justify-between border-b">
-        <h3 class="px-3 font-bold">More from LinkedIn</h3>
-        <button
-          type="button"
-          class="flex flex-col items-center justify-center p-3 text-sm text-blue-300 "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-6 h-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
+      <div class="h-full overflow-y-scroll">
+        <div class="relative flex items-center justify-between border-b">
+          <h3 class="px-3 font-bold">More from LinkedIn</h3>
+          <button
+            type="button"
+            class="flex flex-col items-center justify-center p-3 text-sm text-blue-300 "
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-          HELP
-        </button>
-      </div>
-      <div class="p-5 border-b">
-        <div
-          class="
-            flex
-            items-center
-            p-3
-            text-sm text-white
-            bg-[#0275B1]
-            rounded-md
-            mb-3
-          "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-8 h-8"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-            />
-          </svg>
-          <div class="ml-3">
-            <p>Learning with LinkedIn</p>
-            <p class="text-xs text-gray-200">Course, lectures, workshops</p>
-          </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            HELP
+          </button>
         </div>
-        <div class="grid grid-cols-12">
+        <div class="p-5 border-b">
           <div
-            class="col-span-6 p-3 m-2 border rounded-md cursor-pointer  hover:bg-yellow-700"
-            v-for="item in funcArray"
-            :key="item.d"
+            class="
+              flex
+              items-center
+              p-3
+              text-sm text-white
+              bg-[#0275B1]
+              rounded-md
+              mb-3
+            "
           >
-            <div class="flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-6 h-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  :d="item.d"
-                />
-              </svg>
-              <span class="ml-3 text-sm font-bold">{{ item.title }}</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-8 h-8"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+              />
+            </svg>
+            <div class="ml-3">
+              <p>Learning with LinkedIn</p>
+              <p class="text-xs text-gray-200">Course, lectures, workshops</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-12">
+            <div
+              class="col-span-6 p-3 m-2 border rounded-md cursor-pointer  hover:bg-yellow-700"
+              v-for="item in funcArray"
+              :key="item.d"
+            >
+              <div class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    :d="item.d"
+                  />
+                </svg>
+                <span class="ml-3 text-sm font-bold">{{ item.title }}</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="p-5 mb-3 border-b">
-        <h3 class="mb-3 font-bold">Business services</h3>
-        <div
-          class="p-3 mb-3 border rounded-md"
-          v-for="item in servicesArray"
-          :key="item.title"
-        >
-          <p class="text-sm font-bold">{{ item.title }}</p>
-          <p class="text-xs text-gray-500">{{ item.description }}</p>
-        </div>
-      </div>
-      <div class="p-5">
-        <button
-          type="button "
-          class="
-            flex flex-col
-            w-full
-            py-4
-            px-5
-            text-sm text-white
-            rounded-md
-            bg-[#C7B378]
-            hover:bg-yellow-600
-          "
-        >
-          LinkedIn Premium
-          <span class="text-xs text-gray-500"
-            >Spacial feactures only for premium users</span
+        <div class="p-5 mb-3 border-b">
+          <h3 class="mb-3 font-bold">Business services</h3>
+          <div
+            class="p-3 mb-3 border rounded-md"
+            v-for="item in servicesArray"
+            :key="item.title"
           >
-        </button>
+            <p class="text-sm font-bold">{{ item.title }}</p>
+            <p class="text-xs text-gray-500">{{ item.description }}</p>
+          </div>
+        </div>
+        <div class="p-5">
+          <button
+            type="button "
+            class="
+              flex flex-col
+              w-full
+              py-4
+              px-5
+              text-sm text-white
+              rounded-md
+              bg-[#C7B378]
+              hover:bg-yellow-600
+            "
+          >
+            LinkedIn Premium
+            <span class="text-xs text-gray-500"
+              >Spacial feactures only for premium users</span
+            >
+          </button>
+        </div>
       </div>
     </div>
   </div>

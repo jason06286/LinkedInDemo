@@ -182,7 +182,7 @@ export default {
         >
           <div class="flex items-center">
             <img :src="item.img" :alt="item.name" />
-            <div class="ml-3 space-y-1">
+            <div class="flex-shrink-0 ml-3 space-y-1">
               <h3 class="text-sm font-bold">{{ item.name }}</h3>
               <p class="text-xs">{{ item.title }}</p>
               <p class="text-xs text-blue-300">{{ item.connections }}</p>
