@@ -1,6 +1,5 @@
 <script>
 import { ref } from 'vue';
-
 export default {
   setup(props) {
     const funcArray = ref([
@@ -51,9 +50,7 @@ export default {
         description: 'Develop talent across your organisation',
       },
     ]);
-
     const isShow = ref(false);
-
     return {
       funcArray,
       servicesArray,

@@ -66,7 +66,7 @@ export default {
       <input
         type="text"
         placeholder="Search"
-        class="w-full bg-[#F7F9FB] border-none"
+        class="w-full bg-[#F7F9FB] border-none   "
         @focus="isFocus = true"
         @blur="isFocus = false"
       />
